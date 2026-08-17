@@ -1,200 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Instagram Home</title>
-
-    <link rel="stylesheet"
-          href="{{ url_for('static', filename='style.css') }}">
+    <title>Instagram - Home</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <!-- Navbar -->
+<div class="app">
 
-    <nav class="navbar">
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="sidebar">
 
-        <div class="logo">
-            Instagram
+        <div class="logo">Instagram</div>
+
+        <nav class="navigation">
+
+            <a href="#" class="nav-item active">
+                <span class="icon">⌂</span>
+                <span>Home</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">⌕</span>
+                <span>Search</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">◉</span>
+                <span>Explore</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">▶</span>
+                <span>Reels</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">✈</span>
+                <span>Messages</span>
+                <span class="badge">3</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">♡</span>
+                <span>Notifications</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="icon">＋</span>
+                <span>Create</span>
+            </a>
+
+            <a href="#" class="nav-item">
+                <span class="profile-small">ST</span>
+                <span>Profile</span>
+            </a>
+
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <a href="#" class="nav-item">
+                <span class="icon">☰</span>
+                <span>More</span>
+            </a>
+
         </div>
 
-        <div class="search">
-            <input type="text" placeholder="Search">
-        </div>
-
-        <div class="nav-icons">
-            <span>🏠</span>
-            <span>💬</span>
-            <span>➕</span>
-            <span>❤️</span>
-            <span>👤</span>
-        </div>
-
-    </nav>
+    </aside>
 
 
-    <!-- Main container -->
+    <!-- ================= MAIN CONTENT ================= -->
+    <main class="main-content">
 
-    <main class="container">
+        <!-- Mobile Header -->
+        <header class="mobile-header">
+            <div class="mobile-logo">Instagram</div>
 
-        <!-- Stories -->
-
-        <section class="stories">
-
-            <div class="story">
-                <div class="story-image">👤</div>
-                <p>Your Story</p>
+            <div class="mobile-actions">
+                <span>♡</span>
+                <span>✈</span>
             </div>
-
-            <div class="story">
-                <div class="story-image">🌴</div>
-                <p>travel</p>
-            </div>
-
-            <div class="story">
-                <div class="story-image">🌄</div>
-                <p>nature</p>
-            </div>
-
-            <div class="story">
-                <div class="story-image">🏙️</div>
-                <p>city</p>
-            </div>
-
-            <div class="story">
-                <div class="story-image">🍕</div>
-                <p>food</p>
-            </div>
-
-        </section>
+        </header>
 
 
-        <!-- Posts -->
-
+        <!-- ================= FEED ================= -->
         <section class="feed">
 
-            {% for post in posts %}
+            <!-- STORIES -->
+            <div class="stories-card">
 
+                <div class="story">
+                    <div class="story-ring">
+                        <div class="story-avatar your-story">ST</div>
+                    </div>
+                    <span>Your story</span>
+                </div>
+
+                <div class="story">
+                    <div class="story-ring">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="Alex">
+                    </div>
+                    <span>alex_dev</span>
+                </div>
+
+                <div class="story">
+                    <div class="story-ring">
+                        <img src="https://i.pravatar.cc/150?img=32" alt="Sarah">
+                    </div>
+                    <span>sarah.j</span>
+                </div>
+
+                <div class="story">
+                    <div class="story-ring">
+                        <img src="https://i.pravatar.cc/150?img=45" alt="Mike">
+                    </div>
+                    <span>mike.tech</span>
+                </div>
+
+                <div class="story">
+                    <div class="story-ring">
+                        <img src="https://i.pravatar.cc/150?img=47" alt="Emma">
+                    </div>
+                    <span>emma_world</span>
+                </div>
+
+                <div class="story">
+                    <div class="story-ring">
+                        <img src="https://i.pravatar.cc/150?img=52" alt="David">
+                    </div>
+                    <span>david_01</span>
+                </div>
+
+            </div>
+
+
+            <!-- ================= POST 1 ================= -->
             <article class="post">
 
                 <div class="post-header">
 
-                    <div class="profile">
-                        <div class="profile-picture">
-                            👤
+                    <div class="user-info">
+
+                        <img
+                            src="https://i.pravatar.cc/100?img=12"
+                            class="avatar"
+                            alt="Alex">
+
+                        <div>
+                            <strong>alex_dev</strong>
+                            <span>San Francisco, California</span>
                         </div>
 
-                        <strong>
-                            {{ post.username }}
-                        </strong>
                     </div>
 
-                    <span>•••</span>
+                    <button class="more-btn">•••</button>
 
                 </div>
 
 
-                <img
-                    class="post-image"
-                    src="{{ post.image }}?auto=format&fit=crop&w=900&q=80"
-                    alt="Instagram post"
-                >
+                <div class="post-image">
+                    <img
+                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1000&q=80"
+                        alt="Coding workspace">
+                </div>
 
 
                 <div class="post-actions">
 
-                    <div>
-                        <span>❤️</span>
-                        <span>💬</span>
-                        <span>📤</span>
+                    <div class="left-actions">
+                        <button class="action-btn like-btn">♡</button>
+                        <button class="action-btn">○</button>
+                        <button class="action-btn">✈</button>
                     </div>
 
-                    <span>🔖</span>
+                    <button class="action-btn">♧</button>
 
                 </div>
 
 
-                <div class="likes">
-                    1,245 likes
+                <div class="post-content">
+
+                    <strong class="likes">1,284 likes</strong>
+
+                    <p>
+                        <strong>alex_dev</strong>
+                        Building something amazing today 🚀
+                        <span class="hashtags">
+                            #coding #developer #technology
+                        </span>
+                    </p>
+
+                    <button class="comments">
+                        View all 84 comments
+                    </button>
+
+                    <div class="comment">
+                        <strong>sarah.j</strong> Amazing setup 🔥
+                    </div>
+
+                    <div class="comment">
+                        <strong>mike.tech</strong> Great work!
+                    </div>
+
+                    <div class="time">
+                        2 HOURS AGO
+                    </div>
+
                 </div>
 
-
-                <div class="caption">
-
-                    <strong>
-                        {{ post.username }}
-                    </strong>
-
-                    {{ post.caption }}
-
-                </div>
-
-
-                <div class="comments">
-                    View all 32 comments
-                </div>
 
                 <div class="add-comment">
-                    Add a comment...
+
+                    <span>☺</span>
+
+                    <input
+                        type="text"
+                        placeholder="Add a comment...">
+
+                    <button>Post</button>
+
                 </div>
 
             </article>
 
-            {% endfor %}
+
+            <!-- ================= POST 2 ================= -->
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="user-info">
+
+                        <img
+                            src="https://i.pravatar.cc/100?img=32"
+                            class="avatar"
+                            alt="Sarah">
+
+                        <div>
+                            <strong>sarah.j</strong>
+                            <span>New York, USA</span>
+                        </div>
+
+                    </div>
+
+                    <button class="more-btn">•••</button>
+
+                </div>
+
+
+                <div class="post-image">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
+                        alt="Office">
+
+                </div>
+
+
+                <div class="post-actions">
+
+                    <div class="left-actions">
+                        <button class="action-btn like-btn">♡</button>
+                        <button class="action-btn">○</button>
+                        <button class="action-btn">✈</button>
+                    </div>
+
+                    <button class="action-btn">♧</button>
+
+                </div>
+
+
+                <div class="post-content">
+
+                    <strong class="likes">892 likes</strong>
+
+                    <p>
+                        <strong>sarah.j</strong>
+                        Monday motivation 💻☕
+                    </p>
+
+                    <button class="comments">
+                        View all 32 comments
+                    </button>
+
+                    <div class="time">
+                        5 HOURS AGO
+                    </div>
+
+                </div>
+
+
+                <div class="add-comment">
+
+                    <span>☺</span>
+
+                    <input
+                        type="text"
+                        placeholder="Add a comment...">
+
+                    <button>Post</button>
+
+                </div>
+
+            </article>
 
         </section>
 
 
-        <!-- Right sidebar -->
+        <!-- ================= RIGHT SIDEBAR ================= -->
+        <aside class="right-sidebar">
 
-        <aside class="sidebar">
+            <div class="current-user">
 
-            <div class="profile-card">
+                <div class="profile-info">
 
-                <div class="profile-picture big">
-                    👤
+                    <div class="profile-large">
+                        ST
+                    </div>
+
+                    <div>
+                        <strong>sathyatesting18</strong>
+                        <span>Sathya Testing</span>
+                    </div>
+
                 </div>
 
-                <div>
-                    <strong>sathya_testing</strong>
-                    <p>QA & DevOps Learner</p>
-                </div>
-
-                <button>
+                <button class="switch">
                     Switch
                 </button>
 
             </div>
 
 
-            <h4>
-                Suggested for you
-            </h4>
+            <div class="suggestion-heading">
 
-            <div class="suggestion">
-                <span>👨</span>
-                <strong>developer_world</strong>
-                <button>Follow</button>
+                <strong>Suggested for you</strong>
+
+                <a href="#">See All</a>
+
             </div>
 
-            <div class="suggestion">
-                <span>👩</span>
-                <strong>testing_world</strong>
-                <button>Follow</button>
-            </div>
 
             <div class="suggestion">
-                <span>👨</span>
-                <strong>devops_daily</strong>
+
+                <img src="https://i.pravatar.cc/100?img=45">
+
+                <div class="suggestion-user">
+                    <strong>emma_world</strong>
+                    <span>Followed by alex_dev</span>
+                </div>
+
                 <button>Follow</button>
+
             </div>
+
+
+            <div class="suggestion">
+
+                <img src="https://i.pravatar.cc/100?img=47">
+
+                <div class="suggestion-user">
+                    <strong>david_01</strong>
+                    <span>New to Instagram</span>
+                </div>
+
+                <button>Follow</button>
+
+            </div>
+
+
+            <div class="suggestion">
+
+                <img src="https://i.pravatar.cc/100?img=52">
+
+                <div class="suggestion-user">
+                    <strong>john_dev</strong>
+                    <span>Followed by mike.tech</span>
+                </div>
+
+                <button>Follow</button>
+
+            </div>
+
+
+            <footer class="footer">
+
+                <div>
+                    About · Help · Press · API · Jobs
+                </div>
+
+                <div>
+                    Privacy · Terms · Locations
+                </div>
+
+                <p>
+                    © 2026 INSTAGRAM CLONE
+                </p>
+
+            </footer>
 
         </aside>
 
     </main>
+
+</div>
+
+
+<!-- ================= SIMPLE INTERACTION ================= -->
+<script>
+
+    const likeButtons = document.querySelectorAll(".like-btn");
+
+    likeButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            this.classList.toggle("liked");
+
+            if (this.classList.contains("liked")) {
+                this.textContent = "♥";
+            } else {
+                this.textContent = "♡";
+            }
+
+        });
+
+    });
+
+</script>
 
 </body>
 </html>
