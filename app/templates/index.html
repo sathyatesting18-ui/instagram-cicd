@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Instagram Home</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Instagram
+        </div>
+
+        <div class="search">
+            <input type="text" placeholder="Search">
+        </div>
+
+        <div class="nav-icons">
+            <span>🏠</span>
+            <span>💬</span>
+            <span>➕</span>
+            <span>❤️</span>
+            <span>👤</span>
+        </div>
+
+    </nav>
+
+
+    <!-- Main container -->
+
+    <main class="container">
+
+        <!-- Stories -->
+
+        <section class="stories">
+
+            <div class="story">
+                <div class="story-image">👤</div>
+                <p>Your Story</p>
+            </div>
+
+            <div class="story">
+                <div class="story-image">🌴</div>
+                <p>travel</p>
+            </div>
+
+            <div class="story">
+                <div class="story-image">🌄</div>
+                <p>nature</p>
+            </div>
+
+            <div class="story">
+                <div class="story-image">🏙️</div>
+                <p>city</p>
+            </div>
+
+            <div class="story">
+                <div class="story-image">🍕</div>
+                <p>food</p>
+            </div>
+
+        </section>
+
+
+        <!-- Posts -->
+
+        <section class="feed">
+
+            {% for post in posts %}
+
+            <article class="post">
+
+                <div class="post-header">
+
+                    <div class="profile">
+                        <div class="profile-picture">
+                            👤
+                        </div>
+
+                        <strong>
+                            {{ post.username }}
+                        </strong>
+                    </div>
+
+                    <span>•••</span>
+
+                </div>
+
+
+                <img
+                    class="post-image"
+                    src="{{ post.image }}?auto=format&fit=crop&w=900&q=80"
+                    alt="Instagram post"
+                >
+
+
+                <div class="post-actions">
+
+                    <div>
+                        <span>❤️</span>
+                        <span>💬</span>
+                        <span>📤</span>
+                    </div>
+
+                    <span>🔖</span>
+
+                </div>
+
+
+                <div class="likes">
+                    1,245 likes
+                </div>
+
+
+                <div class="caption">
+
+                    <strong>
+                        {{ post.username }}
+                    </strong>
+
+                    {{ post.caption }}
+
+                </div>
+
+
+                <div class="comments">
+                    View all 32 comments
+                </div>
+
+                <div class="add-comment">
+                    Add a comment...
+                </div>
+
+            </article>
+
+            {% endfor %}
+
+        </section>
+
+
+        <!-- Right sidebar -->
+
+        <aside class="sidebar">
+
+            <div class="profile-card">
+
+                <div class="profile-picture big">
+                    👤
+                </div>
+
+                <div>
+                    <strong>sathya_testing</strong>
+                    <p>QA & DevOps Learner</p>
+                </div>
+
+                <button>
+                    Switch
+                </button>
+
+            </div>
+
+
+            <h4>
+                Suggested for you
+            </h4>
+
+            <div class="suggestion">
+                <span>👨</span>
+                <strong>developer_world</strong>
+                <button>Follow</button>
+            </div>
+
+            <div class="suggestion">
+                <span>👩</span>
+                <strong>testing_world</strong>
+                <button>Follow</button>
+            </div>
+
+            <div class="suggestion">
+                <span>👨</span>
+                <strong>devops_daily</strong>
+                <button>Follow</button>
+            </div>
+
+        </aside>
+
+    </main>
+
+</body>
+</html>
