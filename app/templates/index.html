@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>CareerHub - Find Your Next Job</title>
+    <title>StreamVerse — One Home for Every OTT</title>
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
@@ -22,386 +23,460 @@
 
 <header class="navbar">
 
-    <div class="container nav-wrapper">
+    <div class="logo">
+        <span class="logo-mark">
+            <i class="fa-solid fa-play"></i>
+        </span>
 
-        <a href="#" class="logo">
-            Career<span>Hub</span>
-        </a>
+        <span>Stream<span>Verse</span></span>
+    </div>
 
-        <nav class="nav-menu">
-            <a href="#">Home</a>
-            <a href="#jobs">Find Jobs</a>
-            <a href="#categories">Categories</a>
-            <a href="#companies">Companies</a>
-            <a href="#about">About</a>
-        </nav>
+    <nav class="nav-links">
+        <a href="#" class="active">Home</a>
+        <a href="#trending">Trending</a>
+        <a href="#movies">Movies</a>
+        <a href="#series">Series</a>
+        <a href="#ott">OTT Platforms</a>
+    </nav>
 
-        <div class="nav-buttons">
-            <a href="#" class="login-btn">Login</a>
-            <a href="#" class="register-btn">Register</a>
-        </div>
+    <div class="nav-actions">
 
-        <button class="mobile-menu">☰</button>
+        <button class="search-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+
+        <button class="notification">
+            <i class="fa-regular fa-bell"></i>
+            <span></span>
+        </button>
+
+        <button class="profile">
+            <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
+        </button>
+
+        <button class="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </button>
 
     </div>
 
 </header>
 
 
+<!-- ================= SEARCH OVERLAY ================= -->
+
+<div class="search-overlay">
+
+    <button class="close-search">
+        <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="search-container">
+
+        <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </span>
+
+        <input type="text"
+               placeholder="Search movies, series, actors, platforms...">
+
+    </div>
+
+</div>
+
+
 <!-- ================= HERO ================= -->
 
 <section class="hero">
 
-    <div class="container">
+    <div class="hero-background"></div>
 
-        <div class="hero-content">
+    <div class="hero-content">
 
-            <span class="hero-label">
-                #1 Job Search Platform
+        <div class="hero-badge">
+            <i class="fa-solid fa-fire"></i>
+            #1 Trending Worldwide
+        </div>
+
+        <h1>
+            The Last
+            <span>Galaxy</span>
+        </h1>
+
+        <div class="hero-meta">
+
+            <span class="rating">
+                <i class="fa-solid fa-star"></i>
+                9.2
             </span>
 
-            <h1>
-                Find the right job.
-                <br>
-                Build your future.
-            </h1>
+            <span>2026</span>
+            <span>2h 18m</span>
+            <span class="quality">4K UHD</span>
+            <span class="quality">HDR</span>
 
-            <p>
-                Search thousands of job opportunities from trusted
-                companies and take the next step in your career.
-            </p>
+        </div>
 
-            <!-- SEARCH -->
+        <p class="hero-description">
+            Humanity's final journey begins beyond the stars.
+            An epic cinematic adventure where courage, sacrifice,
+            and destiny collide in a universe filled with secrets.
+        </p>
 
-            <div class="search-container">
+        <div class="hero-platform">
+            <span>Streaming on</span>
+            <strong>NETFLIX</strong>
+        </div>
 
-                <div class="search-input">
+        <div class="hero-buttons">
 
-                    <span class="icon">⌕</span>
+            <button class="btn-primary">
+                <i class="fa-solid fa-play"></i>
+                Watch Now
+            </button>
 
-                    <div>
-                        <label>Job title, keyword</label>
+            <button class="btn-secondary">
+                <i class="fa-solid fa-plus"></i>
+                My List
+            </button>
 
-                        <input
-                            type="text"
-                            placeholder="e.g. Software Engineer"
-                        >
-                    </div>
-
-                </div>
-
-                <div class="search-input">
-
-                    <span class="icon">⌖</span>
-
-                    <div>
-                        <label>Location</label>
-
-                        <input
-                            type="text"
-                            placeholder="City, state or remote"
-                        >
-                    </div>
-
-                </div>
-
-                <button class="search-button">
-                    Search Jobs
-                </button>
-
-            </div>
-
-            <div class="popular-searches">
-
-                <strong>Popular searches:</strong>
-
-                <a href="#">Software Engineer</a>
-                <a href="#">Data Analyst</a>
-                <a href="#">Product Manager</a>
-                <a href="#">DevOps Engineer</a>
-
-            </div>
+            <button class="info-btn">
+                <i class="fa-solid fa-circle-info"></i>
+            </button>
 
         </div>
 
     </div>
 
+    <div class="hero-scroll">
+        <span>Scroll to explore</span>
+        <i class="fa-solid fa-chevron-down"></i>
+    </div>
+
 </section>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
 
 
 <!-- ================= STATS ================= -->
 
 <section class="stats">
 
-    <div class="container stats-grid">
+    <div class="stat-card">
+        <i class="fa-solid fa-film"></i>
+        <div>
+            <strong>50K+</strong>
+            <span>Movies & Shows</span>
+        </div>
+    </div>
 
-        <div class="stat-box">
-            <strong>250,000+</strong>
-            <span>Jobs Available</span>
+    <div class="stat-card">
+        <i class="fa-solid fa-tv"></i>
+        <div>
+            <strong>30+</strong>
+            <span>OTT Platforms</span>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-earth-americas"></i>
+        <div>
+            <strong>190+</strong>
+            <span>Countries</span>
+        </div>
+    </div>
+
+    <div class="stat-card">
+        <i class="fa-solid fa-bolt"></i>
+        <div>
+            <strong>Live</strong>
+            <span>Availability Tracking</span>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- ================= TRENDING ================= -->
+
+<section class="content-section" id="trending">
+
+    <div class="section-header">
+
+        <div>
+            <span class="section-label">WHAT'S HOT</span>
+            <h2>Trending <span>Now</span></h2>
         </div>
 
-        <div class="stat-box">
-            <strong>45,000+</strong>
-            <span>Companies</span>
-        </div>
+        <a href="#">
+            View All
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
-        <div class="stat-box">
-            <strong>1.2M+</strong>
-            <span>Job Seekers</span>
-        </div>
+    </div>
 
-        <div class="stat-box">
-            <strong>95%</strong>
-            <span>Hiring Success</span>
-        </div>
+
+    <div class="movie-grid">
+
+        <article class="movie-card">
+
+            <div class="poster poster-1">
+
+                <div class="rank">01</div>
+
+                <div class="poster-overlay">
+                    <button class="play-circle">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <span class="platform netflix">NETFLIX</span>
+
+            </div>
+
+            <div class="movie-info">
+                <h3>Dark Horizon</h3>
+                <p>Action • Thriller</p>
+
+                <div>
+                    <span class="movie-rating">
+                        <i class="fa-solid fa-star"></i> 9.1
+                    </span>
+
+                    <span>2026</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="movie-card">
+
+            <div class="poster poster-2">
+
+                <div class="rank">02</div>
+
+                <div class="poster-overlay">
+                    <button class="play-circle">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <span class="platform prime">PRIME</span>
+
+            </div>
+
+            <div class="movie-info">
+                <h3>Empire</h3>
+                <p>Drama • Crime</p>
+
+                <div>
+                    <span class="movie-rating">
+                        <i class="fa-solid fa-star"></i> 8.9
+                    </span>
+
+                    <span>2026</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="movie-card">
+
+            <div class="poster poster-3">
+
+                <div class="rank">03</div>
+
+                <div class="poster-overlay">
+                    <button class="play-circle">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <span class="platform disney">DISNEY+</span>
+
+            </div>
+
+            <div class="movie-info">
+                <h3>Beyond Earth</h3>
+                <p>Sci-Fi • Adventure</p>
+
+                <div>
+                    <span class="movie-rating">
+                        <i class="fa-solid fa-star"></i> 8.8
+                    </span>
+
+                    <span>2026</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="movie-card">
+
+            <div class="poster poster-4">
+
+                <div class="rank">04</div>
+
+                <div class="poster-overlay">
+                    <button class="play-circle">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <span class="platform hotstar">HOTSTAR</span>
+
+            </div>
+
+            <div class="movie-info">
+                <h3>Kingdom</h3>
+                <p>Historical • Drama</p>
+
+                <div>
+                    <span class="movie-rating">
+                        <i class="fa-solid fa-star"></i> 8.7
+                    </span>
+
+                    <span>2026</span>
+                </div>
+            </div>
+
+        </article>
+
+
+        <article class="movie-card">
+
+            <div class="poster poster-5">
+
+                <div class="rank">05</div>
+
+                <div class="poster-overlay">
+                    <button class="play-circle">
+                        <i class="fa-solid fa-play"></i>
+                    </button>
+                </div>
+
+                <span class="platform apple">APPLE TV+</span>
+
+            </div>
+
+            <div class="movie-info">
+                <h3>Neon City</h3>
+                <p>Cyberpunk • Mystery</p>
+
+                <div>
+                    <span class="movie-rating">
+                        <i class="fa-solid fa-star"></i> 8.6
+                    </span>
+
+                    <span>2026</span>
+                </div>
+            </div>
+
+        </article>
 
     </div>
 
 </section>
 
 
-<!-- ================= FEATURED JOBS ================= -->
+<!-- ================= OTT PLATFORMS ================= -->
 
-<section class="jobs-section" id="jobs">
+<section class="platform-section" id="ott">
 
-    <div class="container">
+    <div class="section-header">
 
-        <div class="section-header">
+        <div>
+            <span class="section-label">STREAM EVERYWHERE</span>
+            <h2>Explore <span>OTT Platforms</span></h2>
+        </div>
 
+    </div>
+
+
+    <div class="platform-grid">
+
+        <div class="platform-card netflix-card">
+            <div class="platform-logo">N</div>
             <div>
-                <span class="section-label">
-                    FEATURED OPPORTUNITIES
-                </span>
-
-                <h2>
-                    Latest job openings
-                </h2>
-
-                <p>
-                    Explore recently posted opportunities from top employers.
-                </p>
+                <h3>Netflix</h3>
+                <p>Movies & Originals</p>
             </div>
-
-            <a href="#" class="view-jobs">
-                View all jobs →
-            </a>
-
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </div>
 
-
-        <div class="job-list">
-
-            <!-- JOB 1 -->
-
-            <article class="job-card">
-
-                <div class="company-logo microsoft">
-                    M
-                </div>
-
-                <div class="job-info">
-
-                    <span class="company-name">
-                        Microsoft
-                    </span>
-
-                    <h3>
-                        Senior Software Engineer
-                    </h3>
-
-                    <div class="job-details">
-
-                        <span>📍 Remote</span>
-                        <span>💼 Full-time</span>
-                        <span>💰 $140K - $180K</span>
-
-                    </div>
-
-                    <div class="job-tags">
-                        <span>Python</span>
-                        <span>Azure</span>
-                        <span>Cloud</span>
-                    </div>
-
-                </div>
-
-                <div class="job-side">
-
-                    <button class="save-job">
-                        ♡
-                    </button>
-
-                    <span class="posted">
-                        Posted 2 hours ago
-                    </span>
-
-                    <a href="#" class="apply-btn">
-                        Apply Now
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- JOB 2 -->
-
-            <article class="job-card">
-
-                <div class="company-logo amazon">
-                    A
-                </div>
-
-                <div class="job-info">
-
-                    <span class="company-name">
-                        Amazon
-                    </span>
-
-                    <h3>
-                        DevOps Engineer
-                    </h3>
-
-                    <div class="job-details">
-
-                        <span>📍 Seattle, WA</span>
-                        <span>💼 Full-time</span>
-                        <span>💰 $125K - $165K</span>
-
-                    </div>
-
-                    <div class="job-tags">
-                        <span>AWS</span>
-                        <span>Docker</span>
-                        <span>Kubernetes</span>
-                    </div>
-
-                </div>
-
-                <div class="job-side">
-
-                    <button class="save-job">
-                        ♡
-                    </button>
-
-                    <span class="posted">
-                        Posted 5 hours ago
-                    </span>
-
-                    <a href="#" class="apply-btn">
-                        Apply Now
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- JOB 3 -->
-
-            <article class="job-card">
-
-                <div class="company-logo google">
-                    G
-                </div>
-
-                <div class="job-info">
-
-                    <span class="company-name">
-                        Google
-                    </span>
-
-                    <h3>
-                        Data Scientist
-                    </h3>
-
-                    <div class="job-details">
-
-                        <span>📍 New York, NY</span>
-                        <span>💼 Full-time</span>
-                        <span>💰 $130K - $175K</span>
-
-                    </div>
-
-                    <div class="job-tags">
-                        <span>Python</span>
-                        <span>SQL</span>
-                        <span>Machine Learning</span>
-                    </div>
-
-                </div>
-
-                <div class="job-side">
-
-                    <button class="save-job">
-                        ♡
-                    </button>
-
-                    <span class="posted">
-                        Posted 1 day ago
-                    </span>
-
-                    <a href="#" class="apply-btn">
-                        Apply Now
-                    </a>
-
-                </div>
-
-            </article>
-
-
-            <!-- JOB 4 -->
-
-            <article class="job-card">
-
-                <div class="company-logo adobe">
-                    A
-                </div>
-
-                <div class="job-info">
-
-                    <span class="company-name">
-                        Adobe
-                    </span>
-
-                    <h3>
-                        Product Designer
-                    </h3>
-
-                    <div class="job-details">
-
-                        <span>📍 San Jose, CA</span>
-                        <span>💼 Full-time</span>
-                        <span>💰 $110K - $150K</span>
-
-                    </div>
-
-                    <div class="job-tags">
-                        <span>Figma</span>
-                        <span>UX</span>
-                        <span>UI Design</span>
-                    </div>
-
-                </div>
-
-                <div class="job-side">
-
-                    <button class="save-job">
-                        ♡
-                    </button>
-
-                    <span class="posted">
-                        Posted 2 days ago
-                    </span>
-
-                    <a href="#" class="apply-btn">
-                        Apply Now
-                    </a>
-
-                </div>
-
-            </article>
-
+        <div class="platform-card prime-card">
+            <div class="platform-logo">
+                <i class="fa-solid fa-play"></i>
+            </div>
+            <div>
+                <h3>Prime Video</h3>
+                <p>Movies & Series</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+
+        <div class="platform-card disney-card">
+            <div class="platform-logo">+</div>
+            <div>
+                <h3>Disney+</h3>
+                <p>Entertainment</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+
+        <div class="platform-card hotstar-card">
+            <div class="platform-logo">
+                <i class="fa-solid fa-star"></i>
+            </div>
+            <div>
+                <h3>JioHotstar</h3>
+                <p>Sports & Entertainment</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+
+        <div class="platform-card apple-card">
+            <div class="platform-logo">
+                <i class="fa-brands fa-apple"></i>
+            </div>
+            <div>
+                <h3>Apple TV+</h3>
+                <p>Apple Originals</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+
+        <div class="platform-card sony-card">
+            <div class="platform-logo">S</div>
+            <div>
+                <h3>SonyLIV</h3>
+                <p>Indian Entertainment</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+
+        <div class="platform-card zee-card">
+            <div class="platform-logo">Z</div>
+            <div>
+                <h3>ZEE5</h3>
+                <p>Indian Originals</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+        </div>
+
+        <div class="platform-card hulu-card">
+            <div class="platform-logo">H</div>
+            <div>
+                <h3>Hulu</h3>
+                <p>TV & Originals</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square"></i>
         </div>
 
     </div>
@@ -409,190 +484,122 @@
 </section>
 
 
-<!-- ================= CATEGORIES ================= -->
+<!-- ================= MOVIES ================= -->
 
-<section class="categories" id="categories">
+<section class="content-section" id="movies">
 
-    <div class="container">
+    <div class="section-header">
 
-        <div class="center-heading">
-
-            <span class="section-label">
-                EXPLORE JOB CATEGORIES
-            </span>
-
-            <h2>
-                Find jobs by category
-            </h2>
-
-            <p>
-                Discover opportunities across the most popular industries.
-            </p>
-
+        <div>
+            <span class="section-label">CURATED FOR YOU</span>
+            <h2>Popular <span>Movies</span></h2>
         </div>
 
+        <a href="#">
+            Explore Movies
+            <i class="fa-solid fa-arrow-right"></i>
+        </a>
 
-        <div class="category-grid">
-
-            <a href="#" class="category-card">
-
-                <div class="category-icon">
-                    💻
-                </div>
-
-                <div>
-                    <h3>Information Technology</h3>
-                    <span>48,520 Jobs</span>
-                </div>
-
-                <strong>→</strong>
-
-            </a>
+    </div>
 
 
-            <a href="#" class="category-card">
+    <div class="wide-movie-grid">
 
-                <div class="category-icon">
-                    📊
-                </div>
+        <article class="wide-card wide-1">
+            <div class="wide-content">
+                <span>NETFLIX ORIGINAL</span>
+                <h3>Nightfall</h3>
+                <p>When darkness arrives, nobody is safe.</p>
+                <button>
+                    <i class="fa-solid fa-play"></i>
+                    Watch
+                </button>
+            </div>
+        </article>
 
-                <div>
-                    <h3>Finance & Accounting</h3>
-                    <span>27,340 Jobs</span>
-                </div>
+        <article class="wide-card wide-2">
+            <div class="wide-content">
+                <span>PRIME ORIGINAL</span>
+                <h3>Code Zero</h3>
+                <p>The world's most dangerous secret.</p>
+                <button>
+                    <i class="fa-solid fa-play"></i>
+                    Watch
+                </button>
+            </div>
+        </article>
 
-                <strong>→</strong>
-
-            </a>
-
-
-            <a href="#" class="category-card">
-
-                <div class="category-icon">
-                    🎨
-                </div>
-
-                <div>
-                    <h3>Design & Creative</h3>
-                    <span>18,240 Jobs</span>
-                </div>
-
-                <strong>→</strong>
-
-            </a>
-
-
-            <a href="#" class="category-card">
-
-                <div class="category-icon">
-                    📣
-                </div>
-
-                <div>
-                    <h3>Marketing</h3>
-                    <span>21,650 Jobs</span>
-                </div>
-
-                <strong>→</strong>
-
-            </a>
-
-
-            <a href="#" class="category-card">
-
-                <div class="category-icon">
-                    🏥
-                </div>
-
-                <div>
-                    <h3>Healthcare</h3>
-                    <span>32,180 Jobs</span>
-                </div>
-
-                <strong>→</strong>
-
-            </a>
-
-
-            <a href="#" class="category-card">
-
-                <div class="category-icon">
-                    ⚙️
-                </div>
-
-                <div>
-                    <h3>Engineering</h3>
-                    <span>35,920 Jobs</span>
-                </div>
-
-                <strong>→</strong>
-
-            </a>
-
-        </div>
+        <article class="wide-card wide-3">
+            <div class="wide-content">
+                <span>APPLE ORIGINAL</span>
+                <h3>Genesis</h3>
+                <p>One mission. One planet. One chance.</p>
+                <button>
+                    <i class="fa-solid fa-play"></i>
+                    Watch
+                </button>
+            </div>
+        </article>
 
     </div>
 
 </section>
 
 
-<!-- ================= TOP COMPANIES ================= -->
+<!-- ================= GENRES ================= -->
 
-<section class="companies" id="companies">
+<section class="genre-section">
 
-    <div class="container">
+    <div class="section-header">
 
-        <div class="center-heading">
-
-            <span class="section-label">
-                TRUSTED EMPLOYERS
-            </span>
-
-            <h2>
-                Top companies hiring now
-            </h2>
-
+        <div>
+            <span class="section-label">FIND YOUR MOOD</span>
+            <h2>Browse by <span>Genre</span></h2>
         </div>
 
+    </div>
 
-        <div class="companies-grid">
 
-            <div class="company-box">
-                <span>G</span>
-                <h3>Google</h3>
-                <p>1,240 open positions</p>
-            </div>
+    <div class="genre-grid">
 
-            <div class="company-box">
-                <span>M</span>
-                <h3>Microsoft</h3>
-                <p>980 open positions</p>
-            </div>
+        <div class="genre action">
+            <i class="fa-solid fa-gun"></i>
+            <span>Action</span>
+        </div>
 
-            <div class="company-box">
-                <span>A</span>
-                <h3>Amazon</h3>
-                <p>2,430 open positions</p>
-            </div>
+        <div class="genre sci-fi">
+            <i class="fa-solid fa-rocket"></i>
+            <span>Sci-Fi</span>
+        </div>
 
-            <div class="company-box">
-                <span>N</span>
-                <h3>NVIDIA</h3>
-                <p>540 open positions</p>
-            </div>
+        <div class="genre thriller">
+            <i class="fa-solid fa-mask-face"></i>
+            <span>Thriller</span>
+        </div>
 
-            <div class="company-box">
-                <span>O</span>
-                <h3>Oracle</h3>
-                <p>720 open positions</p>
-            </div>
+        <div class="genre comedy">
+            <i class="fa-solid fa-face-laugh"></i>
+            <span>Comedy</span>
+        </div>
 
-            <div class="company-box">
-                <span>S</span>
-                <h3>Salesforce</h3>
-                <p>680 open positions</p>
-            </div>
+        <div class="genre romance">
+            <i class="fa-solid fa-heart"></i>
+            <span>Romance</span>
+        </div>
 
+        <div class="genre horror">
+            <i class="fa-solid fa-ghost"></i>
+            <span>Horror</span>
+        </div>
+
+        <div class="genre anime">
+            <i class="fa-solid fa-dragon"></i>
+            <span>Anime</span>
+        </div>
+
+        <div class="genre documentary">
+            <i class="fa-solid fa-earth-americas"></i>
+            <span>Documentary</span>
         </div>
 
     </div>
@@ -602,70 +609,63 @@
 
 <!-- ================= CTA ================= -->
 
-<section class="career-cta">
+<section class="cta">
 
-    <div class="container">
+    <div class="cta-glow"></div>
 
-        <div class="cta-content">
+    <div class="cta-content">
 
-            <div>
+        <span class="section-label">YOUR ENTERTAINMENT UNIVERSE</span>
 
-                <span class="section-label">
-                    FOR JOB SEEKERS
-                </span>
+        <h2>
+            One place.
+            <span>Every story.</span>
+        </h2>
 
-                <h2>
-                    Ready to take the next step?
-                </h2>
+        <p>
+            Discover what's streaming across your favorite OTT
+            platforms and never miss your next obsession.
+        </p>
 
-                <p>
-                    Create your free profile and connect with
-                    employers looking for your skills.
-                </p>
-
-            </div>
-
-            <div class="cta-buttons">
-
-                <a href="#" class="cta-primary">
-                    Create Free Profile
-                </a>
-
-                <a href="#" class="cta-secondary">
-                    Browse Jobs
-                </a>
-
-            </div>
-
-        </div>
+        <button class="btn-primary">
+            <i class="fa-solid fa-compass"></i>
+            Start Exploring
+        </button>
 
     </div>
 
 </section>
 
 
+</main>
+
+
 <!-- ================= FOOTER ================= -->
 
-<footer id="about">
+<footer>
 
-    <div class="container footer-grid">
+    <div class="footer-top">
 
-        <div class="footer-about">
+        <div class="footer-brand">
 
-            <a href="#" class="logo">
-                Career<span>Hub</span>
-            </a>
+            <div class="logo">
+                <span class="logo-mark">
+                    <i class="fa-solid fa-play"></i>
+                </span>
+
+                Stream<span>Verse</span>
+            </div>
 
             <p>
-                Helping people find meaningful careers
-                and helping companies build great teams.
+                Your universal destination for everything
+                streaming.
             </p>
 
-            <div class="social-links">
-                <a href="#">f</a>
-                <a href="#">in</a>
-                <a href="#">𝕏</a>
-                <a href="#">◎</a>
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-discord"></i></a>
             </div>
 
         </div>
@@ -673,24 +673,24 @@
 
         <div class="footer-column">
 
-            <h4>For Job Seekers</h4>
+            <h4>Discover</h4>
 
-            <a href="#">Search Jobs</a>
-            <a href="#">Create Profile</a>
-            <a href="#">Career Advice</a>
-            <a href="#">Salary Guide</a>
+            <a href="#">Trending</a>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+            <a href="#">Genres</a>
 
         </div>
 
 
         <div class="footer-column">
 
-            <h4>For Employers</h4>
+            <h4>Platforms</h4>
 
-            <a href="#">Post a Job</a>
-            <a href="#">Search Candidates</a>
-            <a href="#">Pricing</a>
-            <a href="#">Recruitment Solutions</a>
+            <a href="#">Netflix</a>
+            <a href="#">Prime Video</a>
+            <a href="#">Disney+</a>
+            <a href="#">Apple TV+</a>
 
         </div>
 
@@ -699,10 +699,10 @@
 
             <h4>Company</h4>
 
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
+            <a href="#">About</a>
             <a href="#">Careers</a>
-            <a href="#">Privacy Policy</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
 
         </div>
 
@@ -711,21 +711,41 @@
 
     <div class="footer-bottom">
 
-        <div class="container footer-bottom-content">
+        <span>© 2026 StreamVerse. All rights reserved.</span>
 
-            <span>
-                © 2026 CareerHub. All rights reserved.
-            </span>
-
-            <span>
-                Terms &nbsp; | &nbsp; Privacy &nbsp; | &nbsp; Cookies
-            </span>
-
+        <div>
+            <span>Made for movie lovers</span>
+            <i class="fa-solid fa-heart"></i>
         </div>
 
     </div>
 
 </footer>
+
+
+<script>
+
+const searchBtn = document.querySelector(".search-btn");
+const searchOverlay = document.querySelector(".search-overlay");
+const closeSearch = document.querySelector(".close-search");
+
+searchBtn.addEventListener("click", () => {
+    searchOverlay.classList.add("show");
+});
+
+closeSearch.addEventListener("click", () => {
+    searchOverlay.classList.remove("show");
+});
+
+
+const menuBtn = document.querySelector(".menu-btn");
+const navLinks = document.querySelector(".nav-links");
+
+menuBtn.addEventListener("click", () => {
+    navLinks.classList.toggle("mobile-open");
+});
+
+</script>
 
 </body>
 </html>
