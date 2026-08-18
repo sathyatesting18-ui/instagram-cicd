@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>StreamVerse — One Home for Every OTT</title>
-
+    <title>OTTVerse - Entertainment Hub</title>
     <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
@@ -19,181 +14,147 @@
 
 <body>
 
-<!-- ================= NAVBAR ================= -->
+<!-- ================= HEADER ================= -->
 
-<header class="navbar">
+<header class="header">
 
-    <div class="logo">
-        <span class="logo-mark">
+    <div class="brand">
+        <div class="brand-icon">
             <i class="fa-solid fa-play"></i>
-        </span>
+        </div>
 
-        <span>Stream<span>Verse</span></span>
+        <div class="brand-name">
+            OTT<span>VERSE</span>
+        </div>
     </div>
 
-    <nav class="nav-links">
-        <a href="#" class="active">Home</a>
-        <a href="#trending">Trending</a>
+    <nav>
+        <a class="active" href="#">Home</a>
         <a href="#movies">Movies</a>
         <a href="#series">Series</a>
-        <a href="#ott">OTT Platforms</a>
+        <a href="#platforms">Platforms</a>
+        <a href="#genres">Genres</a>
     </nav>
 
-    <div class="nav-actions">
+    <div class="header-right">
 
-        <button class="search-btn">
+        <button class="icon-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
         </button>
 
-        <button class="notification">
+        <button class="icon-btn">
             <i class="fa-regular fa-bell"></i>
-            <span></span>
         </button>
 
-        <button class="profile">
-            <img src="https://i.pravatar.cc/100?img=12" alt="Profile">
-        </button>
-
-        <button class="menu-btn">
-            <i class="fa-solid fa-bars"></i>
-        </button>
+        <div class="avatar">
+            <img src="https://i.pravatar.cc/100?img=12">
+        </div>
 
     </div>
 
 </header>
 
 
-<!-- ================= SEARCH OVERLAY ================= -->
-
-<div class="search-overlay">
-
-    <button class="close-search">
-        <i class="fa-solid fa-xmark"></i>
-    </button>
-
-    <div class="search-container">
-
-        <span>
-            <i class="fa-solid fa-magnifying-glass"></i>
-        </span>
-
-        <input type="text"
-               placeholder="Search movies, series, actors, platforms...">
-
-    </div>
-
-</div>
-
-
 <!-- ================= HERO ================= -->
 
 <section class="hero">
 
-    <div class="hero-background"></div>
+    <div class="hero-bg"></div>
+
+    <div class="hero-gradient"></div>
 
     <div class="hero-content">
 
-        <div class="hero-badge">
+        <div class="hero-tag">
             <i class="fa-solid fa-fire"></i>
-            #1 Trending Worldwide
+            #1 MOST WATCHED
         </div>
 
         <h1>
-            The Last
-            <span>Galaxy</span>
+            STRANGER
+            <strong>WORLDS</strong>
         </h1>
 
-        <div class="hero-meta">
+        <div class="movie-meta">
 
-            <span class="rating">
+            <span class="imdb">
                 <i class="fa-solid fa-star"></i>
-                9.2
+                9.4
             </span>
 
             <span>2026</span>
-            <span>2h 18m</span>
-            <span class="quality">4K UHD</span>
-            <span class="quality">HDR</span>
+
+            <span>2h 34m</span>
+
+            <span>16+</span>
+
+            <span class="hd">4K ULTRA HD</span>
 
         </div>
 
-        <p class="hero-description">
-            Humanity's final journey begins beyond the stars.
-            An epic cinematic adventure where courage, sacrifice,
-            and destiny collide in a universe filled with secrets.
+        <p>
+            Enter a universe where reality breaks apart.
+            Follow a group of unlikely heroes as they discover
+            a mysterious world hidden beyond our own.
         </p>
 
-        <div class="hero-platform">
-            <span>Streaming on</span>
-            <strong>NETFLIX</strong>
+        <div class="streaming">
+            <span>AVAILABLE ON</span>
+            <b>NETFLIX</b>
         </div>
 
         <div class="hero-buttons">
 
-            <button class="btn-primary">
+            <button class="watch-btn">
                 <i class="fa-solid fa-play"></i>
                 Watch Now
             </button>
 
-            <button class="btn-secondary">
+            <button class="list-btn">
                 <i class="fa-solid fa-plus"></i>
                 My List
             </button>
 
-            <button class="info-btn">
-                <i class="fa-solid fa-circle-info"></i>
-            </button>
-
         </div>
 
-    </div>
-
-    <div class="hero-scroll">
-        <span>Scroll to explore</span>
-        <i class="fa-solid fa-chevron-down"></i>
     </div>
 
 </section>
 
 
-<!-- ================= MAIN ================= -->
+<!-- ================= QUICK CATEGORIES ================= -->
 
-<main>
+<section class="quick-section">
 
+    <div class="quick-card red">
+        <i class="fa-solid fa-fire"></i>
+        <div>
+            <small>HOT RIGHT NOW</small>
+            <strong>Trending</strong>
+        </div>
+    </div>
 
-<!-- ================= STATS ================= -->
-
-<section class="stats">
-
-    <div class="stat-card">
+    <div class="quick-card purple">
         <i class="fa-solid fa-film"></i>
         <div>
-            <strong>50K+</strong>
-            <span>Movies & Shows</span>
+            <small>EXPLORE</small>
+            <strong>Movies</strong>
         </div>
     </div>
 
-    <div class="stat-card">
+    <div class="quick-card blue">
         <i class="fa-solid fa-tv"></i>
         <div>
-            <strong>30+</strong>
-            <span>OTT Platforms</span>
+            <small>WATCH NEXT</small>
+            <strong>TV Series</strong>
         </div>
     </div>
 
-    <div class="stat-card">
-        <i class="fa-solid fa-earth-americas"></i>
+    <div class="quick-card green">
+        <i class="fa-solid fa-trophy"></i>
         <div>
-            <strong>190+</strong>
-            <span>Countries</span>
-        </div>
-    </div>
-
-    <div class="stat-card">
-        <i class="fa-solid fa-bolt"></i>
-        <div>
-            <strong>Live</strong>
-            <span>Availability Tracking</span>
+            <small>LIVE NOW</small>
+            <strong>Sports</strong>
         </div>
     </div>
 
@@ -202,183 +163,164 @@
 
 <!-- ================= TRENDING ================= -->
 
-<section class="content-section" id="trending">
+<section class="section" id="movies">
 
-    <div class="section-header">
+    <div class="section-title">
 
         <div>
-            <span class="section-label">WHAT'S HOT</span>
+            <small>WHAT EVERYONE IS WATCHING</small>
             <h2>Trending <span>Now</span></h2>
         </div>
 
-        <a href="#">
+        <button class="view-btn">
             View All
             <i class="fa-solid fa-arrow-right"></i>
-        </a>
+        </button>
 
     </div>
 
 
-    <div class="movie-grid">
+    <div class="movie-row">
 
-        <article class="movie-card">
 
-            <div class="poster poster-1">
+        <div class="movie-card">
 
-                <div class="rank">01</div>
+            <div class="poster p1">
 
-                <div class="poster-overlay">
-                    <button class="play-circle">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
+                <div class="number">01</div>
+
+                <div class="poster-bottom">
+                    <span>NETFLIX</span>
                 </div>
 
-                <span class="platform netflix">NETFLIX</span>
+                <button class="poster-play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
 
             </div>
 
-            <div class="movie-info">
-                <h3>Dark Horizon</h3>
-                <p>Action • Thriller</p>
+            <h3>Dark Horizon</h3>
 
-                <div>
-                    <span class="movie-rating">
-                        <i class="fa-solid fa-star"></i> 9.1
-                    </span>
+            <p>Action • Thriller</p>
 
-                    <span>2026</span>
-                </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i> 9.1
+                <span>2026</span>
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="movie-card">
+        <div class="movie-card">
 
-            <div class="poster poster-2">
+            <div class="poster p2">
 
-                <div class="rank">02</div>
+                <div class="number">02</div>
 
-                <div class="poster-overlay">
-                    <button class="play-circle">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
+                <div class="poster-bottom">
+                    <span>PRIME VIDEO</span>
                 </div>
 
-                <span class="platform prime">PRIME</span>
+                <button class="poster-play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
 
             </div>
 
-            <div class="movie-info">
-                <h3>Empire</h3>
-                <p>Drama • Crime</p>
+            <h3>Empire</h3>
 
-                <div>
-                    <span class="movie-rating">
-                        <i class="fa-solid fa-star"></i> 8.9
-                    </span>
+            <p>Crime • Drama</p>
 
-                    <span>2026</span>
-                </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i> 8.9
+                <span>2026</span>
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="movie-card">
+        <div class="movie-card">
 
-            <div class="poster poster-3">
+            <div class="poster p3">
 
-                <div class="rank">03</div>
+                <div class="number">03</div>
 
-                <div class="poster-overlay">
-                    <button class="play-circle">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
+                <div class="poster-bottom">
+                    <span>DISNEY+</span>
                 </div>
 
-                <span class="platform disney">DISNEY+</span>
+                <button class="poster-play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
 
             </div>
 
-            <div class="movie-info">
-                <h3>Beyond Earth</h3>
-                <p>Sci-Fi • Adventure</p>
+            <h3>Beyond Earth</h3>
 
-                <div>
-                    <span class="movie-rating">
-                        <i class="fa-solid fa-star"></i> 8.8
-                    </span>
+            <p>Sci-Fi • Adventure</p>
 
-                    <span>2026</span>
-                </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i> 8.8
+                <span>2026</span>
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="movie-card">
+        <div class="movie-card">
 
-            <div class="poster poster-4">
+            <div class="poster p4">
 
-                <div class="rank">04</div>
+                <div class="number">04</div>
 
-                <div class="poster-overlay">
-                    <button class="play-circle">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
+                <div class="poster-bottom">
+                    <span>JIOHOTSTAR</span>
                 </div>
 
-                <span class="platform hotstar">HOTSTAR</span>
+                <button class="poster-play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
 
             </div>
 
-            <div class="movie-info">
-                <h3>Kingdom</h3>
-                <p>Historical • Drama</p>
+            <h3>Kingdom</h3>
 
-                <div>
-                    <span class="movie-rating">
-                        <i class="fa-solid fa-star"></i> 8.7
-                    </span>
+            <p>Historical • Drama</p>
 
-                    <span>2026</span>
-                </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i> 8.7
+                <span>2026</span>
             </div>
 
-        </article>
+        </div>
 
 
-        <article class="movie-card">
+        <div class="movie-card">
 
-            <div class="poster poster-5">
+            <div class="poster p5">
 
-                <div class="rank">05</div>
+                <div class="number">05</div>
 
-                <div class="poster-overlay">
-                    <button class="play-circle">
-                        <i class="fa-solid fa-play"></i>
-                    </button>
+                <div class="poster-bottom">
+                    <span>APPLE TV+</span>
                 </div>
 
-                <span class="platform apple">APPLE TV+</span>
+                <button class="poster-play">
+                    <i class="fa-solid fa-play"></i>
+                </button>
 
             </div>
 
-            <div class="movie-info">
-                <h3>Neon City</h3>
-                <p>Cyberpunk • Mystery</p>
+            <h3>Neon City</h3>
 
-                <div>
-                    <span class="movie-rating">
-                        <i class="fa-solid fa-star"></i> 8.6
-                    </span>
+            <p>Sci-Fi • Mystery</p>
 
-                    <span>2026</span>
-                </div>
+            <div class="rating">
+                <i class="fa-solid fa-star"></i> 8.6
+                <span>2026</span>
             </div>
 
-        </article>
+        </div>
 
     </div>
 
@@ -387,13 +329,13 @@
 
 <!-- ================= OTT PLATFORMS ================= -->
 
-<section class="platform-section" id="ott">
+<section class="platform-section" id="platforms">
 
-    <div class="section-header">
+    <div class="section-title">
 
         <div>
-            <span class="section-label">STREAM EVERYWHERE</span>
-            <h2>Explore <span>OTT Platforms</span></h2>
+            <small>ALL YOUR FAVORITES</small>
+            <h2>OTT <span>Platforms</span></h2>
         </div>
 
     </div>
@@ -401,82 +343,89 @@
 
     <div class="platform-grid">
 
-        <div class="platform-card netflix-card">
+        <div class="platform netflix">
             <div class="platform-logo">N</div>
             <div>
                 <h3>Netflix</h3>
-                <p>Movies & Originals</p>
+                <p>2,500+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card prime-card">
+
+        <div class="platform prime">
             <div class="platform-logo">
-                <i class="fa-solid fa-play"></i>
+                <i class="fa-brands fa-amazon"></i>
             </div>
             <div>
                 <h3>Prime Video</h3>
-                <p>Movies & Series</p>
+                <p>4,000+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card disney-card">
+
+        <div class="platform disney">
             <div class="platform-logo">+</div>
             <div>
                 <h3>Disney+</h3>
-                <p>Entertainment</p>
+                <p>1,500+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card hotstar-card">
+
+        <div class="platform hotstar">
             <div class="platform-logo">
                 <i class="fa-solid fa-star"></i>
             </div>
             <div>
                 <h3>JioHotstar</h3>
-                <p>Sports & Entertainment</p>
+                <p>5,000+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card apple-card">
+
+        <div class="platform apple">
             <div class="platform-logo">
                 <i class="fa-brands fa-apple"></i>
             </div>
             <div>
                 <h3>Apple TV+</h3>
-                <p>Apple Originals</p>
+                <p>500+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card sony-card">
+
+        <div class="platform sony">
             <div class="platform-logo">S</div>
             <div>
                 <h3>SonyLIV</h3>
-                <p>Indian Entertainment</p>
+                <p>2,000+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card zee-card">
+
+        <div class="platform zee">
             <div class="platform-logo">Z</div>
             <div>
                 <h3>ZEE5</h3>
-                <p>Indian Originals</p>
+                <p>3,500+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
-        <div class="platform-card hulu-card">
+
+        <div class="platform hulu">
             <div class="platform-logo">H</div>
             <div>
                 <h3>Hulu</h3>
-                <p>TV & Originals</p>
+                <p>1,800+ Titles</p>
             </div>
-            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            <i class="fa-solid fa-chevron-right"></i>
         </div>
 
     </div>
@@ -484,62 +433,56 @@
 </section>
 
 
-<!-- ================= MOVIES ================= -->
+<!-- ================= FEATURED ================= -->
 
-<section class="content-section" id="movies">
+<section class="section">
 
-    <div class="section-header">
+    <div class="section-title">
 
         <div>
-            <span class="section-label">CURATED FOR YOU</span>
-            <h2>Popular <span>Movies</span></h2>
+            <small>EDITOR'S CHOICE</small>
+            <h2>Featured <span>Collections</span></h2>
         </div>
-
-        <a href="#">
-            Explore Movies
-            <i class="fa-solid fa-arrow-right"></i>
-        </a>
 
     </div>
 
 
-    <div class="wide-movie-grid">
+    <div class="feature-grid">
 
-        <article class="wide-card wide-1">
-            <div class="wide-content">
-                <span>NETFLIX ORIGINAL</span>
-                <h3>Nightfall</h3>
-                <p>When darkness arrives, nobody is safe.</p>
-                <button>
-                    <i class="fa-solid fa-play"></i>
-                    Watch
-                </button>
-            </div>
-        </article>
+        <div class="feature-card feature1">
 
-        <article class="wide-card wide-2">
-            <div class="wide-content">
-                <span>PRIME ORIGINAL</span>
-                <h3>Code Zero</h3>
-                <p>The world's most dangerous secret.</p>
-                <button>
-                    <i class="fa-solid fa-play"></i>
-                    Watch
-                </button>
+            <div class="feature-content">
+                <small>SCI-FI COLLECTION</small>
+                <h3>Beyond<br>The Stars</h3>
+                <p>12 mind-blowing movies</p>
+                <button>Explore <i class="fa-solid fa-arrow-right"></i></button>
             </div>
-        </article>
 
-        <article class="wide-card wide-3">
-            <div class="wide-content">
-                <span>APPLE ORIGINAL</span>
-                <h3>Genesis</h3>
-                <p>One mission. One planet. One chance.</p>
-                <button>
-                    <i class="fa-solid fa-play"></i>
-                    Watch
-                </button>
+        </div>
+
+
+        <div class="feature-card feature2">
+
+            <div class="feature-content">
+                <small>WEEKEND COLLECTION</small>
+                <h3>Laugh<br>Out Loud</h3>
+                <p>25 comedy favorites</p>
+                <button>Explore <i class="fa-solid fa-arrow-right"></i></button>
             </div>
-        </article>
+
+        </div>
+
+
+        <div class="feature-card feature3">
+
+            <div class="feature-content">
+                <small>TRUE STORIES</small>
+                <h3>Real<br>World</h3>
+                <p>18 powerful documentaries</p>
+                <button>Explore <i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+
+        </div>
 
     </div>
 
@@ -548,12 +491,12 @@
 
 <!-- ================= GENRES ================= -->
 
-<section class="genre-section">
+<section class="section" id="genres">
 
-    <div class="section-header">
+    <div class="section-title">
 
         <div>
-            <span class="section-label">FIND YOUR MOOD</span>
+            <small>WHAT'S YOUR MOOD?</small>
             <h2>Browse by <span>Genre</span></h2>
         </div>
 
@@ -563,18 +506,13 @@
     <div class="genre-grid">
 
         <div class="genre action">
-            <i class="fa-solid fa-gun"></i>
+            <i class="fa-solid fa-bolt"></i>
             <span>Action</span>
         </div>
 
-        <div class="genre sci-fi">
+        <div class="genre scifi">
             <i class="fa-solid fa-rocket"></i>
             <span>Sci-Fi</span>
-        </div>
-
-        <div class="genre thriller">
-            <i class="fa-solid fa-mask-face"></i>
-            <span>Thriller</span>
         </div>
 
         <div class="genre comedy">
@@ -582,14 +520,19 @@
             <span>Comedy</span>
         </div>
 
+        <div class="genre horror">
+            <i class="fa-solid fa-ghost"></i>
+            <span>Horror</span>
+        </div>
+
         <div class="genre romance">
             <i class="fa-solid fa-heart"></i>
             <span>Romance</span>
         </div>
 
-        <div class="genre horror">
-            <i class="fa-solid fa-ghost"></i>
-            <span>Horror</span>
+        <div class="genre crime">
+            <i class="fa-solid fa-user-secret"></i>
+            <span>Crime</span>
         </div>
 
         <div class="genre anime">
@@ -611,25 +554,25 @@
 
 <section class="cta">
 
-    <div class="cta-glow"></div>
+    <div class="cta-inner">
 
-    <div class="cta-content">
-
-        <span class="section-label">YOUR ENTERTAINMENT UNIVERSE</span>
+        <div class="cta-icon">
+            <i class="fa-solid fa-play"></i>
+        </div>
 
         <h2>
-            One place.
-            <span>Every story.</span>
+            One Place.
+            <span>Every Story.</span>
         </h2>
 
         <p>
-            Discover what's streaming across your favorite OTT
-            platforms and never miss your next obsession.
+            Discover movies and series from all your favorite
+            streaming platforms.
         </p>
 
-        <button class="btn-primary">
-            <i class="fa-solid fa-compass"></i>
+        <button class="watch-btn">
             Start Exploring
+            <i class="fa-solid fa-arrow-right"></i>
         </button>
 
     </div>
@@ -637,85 +580,54 @@
 </section>
 
 
-</main>
-
-
 <!-- ================= FOOTER ================= -->
 
 <footer>
 
-    <div class="footer-top">
+    <div class="footer-brand">
 
-        <div class="footer-brand">
-
-            <div class="logo">
-                <span class="logo-mark">
-                    <i class="fa-solid fa-play"></i>
-                </span>
-
-                Stream<span>Verse</span>
+        <div class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-play"></i>
             </div>
 
-            <p>
-                Your universal destination for everything
-                streaming.
-            </p>
-
-            <div class="socials">
-                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                <a href="#"><i class="fa-brands fa-discord"></i></a>
+            <div class="brand-name">
+                OTT<span>VERSE</span>
             </div>
-
         </div>
 
-
-        <div class="footer-column">
-
-            <h4>Discover</h4>
-
-            <a href="#">Trending</a>
-            <a href="#">Movies</a>
-            <a href="#">Series</a>
-            <a href="#">Genres</a>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h4>Platforms</h4>
-
-            <a href="#">Netflix</a>
-            <a href="#">Prime Video</a>
-            <a href="#">Disney+</a>
-            <a href="#">Apple TV+</a>
-
-        </div>
-
-
-        <div class="footer-column">
-
-            <h4>Company</h4>
-
-            <a href="#">About</a>
-            <a href="#">Careers</a>
-            <a href="#">Contact</a>
-            <a href="#">Privacy</a>
-
-        </div>
+        <p>
+            Your ultimate entertainment universe.
+            Discover what's worth watching.
+        </p>
 
     </div>
 
 
-    <div class="footer-bottom">
-
-        <span>© 2026 StreamVerse. All rights reserved.</span>
+    <div class="footer-links">
 
         <div>
-            <span>Made for movie lovers</span>
-            <i class="fa-solid fa-heart"></i>
+            <h4>Explore</h4>
+            <a href="#">Movies</a>
+            <a href="#">Series</a>
+            <a href="#">Trending</a>
+            <a href="#">Genres</a>
+        </div>
+
+        <div>
+            <h4>Platforms</h4>
+            <a href="#">Netflix</a>
+            <a href="#">Prime Video</a>
+            <a href="#">Disney+</a>
+            <a href="#">JioHotstar</a>
+        </div>
+
+        <div>
+            <h4>Company</h4>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
         </div>
 
     </div>
@@ -723,29 +635,10 @@
 </footer>
 
 
-<script>
+<div class="copyright">
+    © 2026 OTTVERSE — Entertainment Without Limits.
+</div>
 
-const searchBtn = document.querySelector(".search-btn");
-const searchOverlay = document.querySelector(".search-overlay");
-const closeSearch = document.querySelector(".close-search");
-
-searchBtn.addEventListener("click", () => {
-    searchOverlay.classList.add("show");
-});
-
-closeSearch.addEventListener("click", () => {
-    searchOverlay.classList.remove("show");
-});
-
-
-const menuBtn = document.querySelector(".menu-btn");
-const navLinks = document.querySelector(".nav-links");
-
-menuBtn.addEventListener("click", () => {
-    navLinks.classList.toggle("mobile-open");
-});
-
-</script>
 
 </body>
 </html>
