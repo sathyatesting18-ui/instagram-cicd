@@ -3,438 +3,576 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram - Hdhfohffodfodfdfdfjdfome</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    <title>JobNova — The Future of Work</title>
+
+    <link rel="stylesheet" href="style.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-<div class="app">
+    <!-- ================= NAVBAR ================= -->
 
-    <!-- ================= SIDEBAR ================= -->
-    <aside class="sidebar">
+    <header class="navbar">
+        <div class="container nav-container">
 
-        <div class="logo">Instagram</div>
-
-        <nav class="navigation">
-
-            <a href="#" class="nav-item active">
-                <span class="icon">⌂</span>
-                <span>Home</span>
+            <a href="#" class="logo">
+                <span class="logo-icon">✦</span>
+                Job<span>Nova</span>
             </a>
 
-            <a href="#" class="nav-item">
-                <span class="icon">⌕</span>
-                <span>Search</span>
-            </a>
+            <nav class="nav-links">
+                <a href="#jobs">Find Jobs</a>
+                <a href="#categories">Categories</a>
+                <a href="#companies">Companies</a>
+                <a href="#resources">Resources</a>
+            </nav>
 
-            <a href="#" class="nav-item">
-                <span class="icon">◉</span>
-                <span>Explore</span>
-            </a>
+            <div class="nav-actions">
+                <a href="#" class="login">Log in</a>
+                <a href="#" class="post-btn">Post a Job <span>↗</span></a>
+            </div>
 
-            <a href="#" class="nav-item">
-                <span class="icon">▶</span>
-                <span>Reels</span>
-            </a>
-
-            <a href="#" class="nav-item">
-                <span class="icon">✈</span>
-                <span>Messages</span>
-                <span class="badge">3</span>
-            </a>
-
-            <a href="#" class="nav-item">
-                <span class="icon">♡</span>
-                <span>Notifications</span>
-            </a>
-
-            <a href="#" class="nav-item">
-                <span class="icon">＋</span>
-                <span>Create</span>
-            </a>
-
-            <a href="#" class="nav-item">
-                <span class="profile-small">ST</span>
-                <span>Profile</span>
-            </a>
-
-        </nav>
-
-        <div class="sidebar-bottom">
-
-            <a href="#" class="nav-item">
-                <span class="icon">☰</span>
-                <span>More</span>
-            </a>
+            <button class="menu-btn">☰</button>
 
         </div>
-
-    </aside>
-
-
-    <!-- ================= MAIN CONTENT ================= -->
-    <main class="main-content">
-
-        <!-- Mobile Header -->
-        <header class="mobile-header">
-            <div class="mobile-logo">Instagram</div>
-
-            <div class="mobile-actions">
-                <span>♡</span>
-                <span>✈</span>
-            </div>
-        </header>
+    </header>
 
 
-        <!-- ================= FEED ================= -->
-        <section class="feed">
+    <!-- ================= HERO ================= -->
 
-            <!-- STORIES -->
-            <div class="stories-card">
+    <main>
 
-                <div class="story">
-                    <div class="story-ring">
-                        <div class="story-avatar your-story">ST</div>
-                    </div>
-                    <span>Your story</span>
-                </div>
+        <section class="hero">
 
-                <div class="story">
-                    <div class="story-ring">
-                        <img src="https://i.pravatar.cc/150?img=12" alt="Alex">
-                    </div>
-                    <span>alex_dev</span>
-                </div>
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
 
-                <div class="story">
-                    <div class="story-ring">
-                        <img src="https://i.pravatar.cc/150?img=32" alt="Sarah">
-                    </div>
-                    <span>sarah.j</span>
-                </div>
+            <div class="container hero-container">
 
-                <div class="story">
-                    <div class="story-ring">
-                        <img src="https://i.pravatar.cc/150?img=45" alt="Mike">
-                    </div>
-                    <span>mike.tech</span>
-                </div>
+                <div class="hero-content">
 
-                <div class="story">
-                    <div class="story-ring">
-                        <img src="https://i.pravatar.cc/150?img=47" alt="Emma">
-                    </div>
-                    <span>emma_world</span>
-                </div>
-
-                <div class="story">
-                    <div class="story-ring">
-                        <img src="https://i.pravatar.cc/150?img=52" alt="David">
-                    </div>
-                    <span>david_01</span>
-                </div>
-
-            </div>
-
-
-            <!-- ================= POST 1 ================= -->
-            <article class="post">
-
-                <div class="post-header">
-
-                    <div class="user-info">
-
-                        <img
-                            src="https://i.pravatar.cc/100?img=12"
-                            class="avatar"
-                            alt="Alex">
-
-                        <div>
-                            <strong>alex_dev</strong>
-                            <span>San Francisco, California</span>
-                        </div>
-
+                    <div class="eyebrow">
+                        <span class="pulse"></span>
+                        2.4M+ opportunities worldwide
                     </div>
 
-                    <button class="more-btn">•••</button>
+                    <h1>
+                        Your next
+                        <span class="gradient-text">career move</span>
+                        starts here.
+                    </h1>
 
-                </div>
-
-
-                <div class="post-image">
-                    <img
-                        src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&w=1000&q=80"
-                        alt="Coding workspace">
-                </div>
-
-
-                <div class="post-actions">
-
-                    <div class="left-actions">
-                        <button class="action-btn like-btn">♡</button>
-                        <button class="action-btn">○</button>
-                        <button class="action-btn">✈</button>
-                    </div>
-
-                    <button class="action-btn">♧</button>
-
-                </div>
-
-
-                <div class="post-content">
-
-                    <strong class="likes">1,284 likes</strong>
-
-                    <p>
-                        <strong>alex_dev</strong>
-                        Building something amazing today 🚀
-                        <span class="hashtags">
-                            #coding #developer #technology
-                        </span>
+                    <p class="hero-description">
+                        Discover high-impact jobs, connect with ambitious companies,
+                        and build the career you actually want.
                     </p>
 
-                    <button class="comments">
-                        View all 84 comments
-                    </button>
+                    <!-- SEARCH -->
 
-                    <div class="comment">
-                        <strong>sarah.j</strong> Amazing setup 🔥
-                    </div>
+                    <div class="search-box">
 
-                    <div class="comment">
-                        <strong>mike.tech</strong> Great work!
-                    </div>
+                        <div class="search-field">
+                            <span class="search-icon">⌕</span>
 
-                    <div class="time">
-                        2 HOURS AGO
-                    </div>
-
-                </div>
-
-
-                <div class="add-comment">
-
-                    <span>☺</span>
-
-                    <input
-                        type="text"
-                        placeholder="Add a comment...">
-
-                    <button>Post</button>
-
-                </div>
-
-            </article>
-
-
-            <!-- ================= POST 2 ================= -->
-            <article class="post">
-
-                <div class="post-header">
-
-                    <div class="user-info">
-
-                        <img
-                            src="https://i.pravatar.cc/100?img=32"
-                            class="avatar"
-                            alt="Sarah">
-
-                        <div>
-                            <strong>sarah.j</strong>
-                            <span>New York, USA</span>
+                            <div>
+                                <label>What are you looking for?</label>
+                                <input
+                                    type="text"
+                                    placeholder="Job title, skill or keyword"
+                                >
+                            </div>
                         </div>
 
+                        <div class="divider"></div>
+
+                        <div class="search-field location-field">
+                            <span class="location-icon">⌖</span>
+
+                            <div>
+                                <label>Location</label>
+                                <input
+                                    type="text"
+                                    placeholder="City or remote"
+                                >
+                            </div>
+                        </div>
+
+                        <button class="search-btn">
+                            Search jobs
+                            <span>→</span>
+                        </button>
+
                     </div>
 
-                    <button class="more-btn">•••</button>
-
-                </div>
-
-
-                <div class="post-image">
-
-                    <img
-                        src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1000&q=80"
-                        alt="Office">
-
-                </div>
-
-
-                <div class="post-actions">
-
-                    <div class="left-actions">
-                        <button class="action-btn like-btn">♡</button>
-                        <button class="action-btn">○</button>
-                        <button class="action-btn">✈</button>
-                    </div>
-
-                    <button class="action-btn">♧</button>
-
-                </div>
-
-
-                <div class="post-content">
-
-                    <strong class="likes">892 likes</strong>
-
-                    <p>
-                        <strong>sarah.j</strong>
-                        Monday motivation 💻☕
-                    </p>
-
-                    <button class="comments">
-                        View all 32 comments
-                    </button>
-
-                    <div class="time">
-                        5 HOURS AGO
+                    <div class="popular">
+                        <span>Popular:</span>
+                        <a href="#">AI Engineer</a>
+                        <a href="#">Product Designer</a>
+                        <a href="#">DevOps</a>
+                        <a href="#">Data Scientist</a>
                     </div>
 
                 </div>
 
+                <!-- HERO VISUAL -->
 
-                <div class="add-comment">
+                <div class="hero-visual">
 
-                    <span>☺</span>
+                    <div class="orb orb-main">
+                        <div class="orb-inner">
+                            <span>JOB</span>
+                            <strong>∞</strong>
+                            <small>FUTURE</small>
+                        </div>
+                    </div>
 
-                    <input
-                        type="text"
-                        placeholder="Add a comment...">
+                    <div class="floating-card card-one">
+                        <div class="mini-icon purple">AI</div>
+                        <div>
+                            <strong>AI Engineer</strong>
+                            <span>Remote · $145K</span>
+                        </div>
+                        <b>→</b>
+                    </div>
 
-                    <button>Post</button>
+                    <div class="floating-card card-two">
+                        <div class="mini-icon green">✓</div>
+                        <div>
+                            <strong>New opportunity</strong>
+                            <span>12,482 jobs added today</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-three">
+                        <div class="avatars">
+                            <span>A</span>
+                            <span>B</span>
+                            <span>C</span>
+                            <span>+</span>
+                        </div>
+                        <div>
+                            <strong>500K+</strong>
+                            <span>Professionals hired</span>
+                        </div>
+                    </div>
 
                 </div>
 
-            </article>
+            </div>
+        </section>
+
+
+        <!-- ================= STATS ================= -->
+
+        <section class="stats-section">
+
+            <div class="container stats">
+
+                <div class="stat">
+                    <strong>2.4M<span>+</span></strong>
+                    <p>Active jobs</p>
+                </div>
+
+                <div class="stat">
+                    <strong>85K<span>+</span></strong>
+                    <p>Companies hiring</p>
+                </div>
+
+                <div class="stat">
+                    <strong>500K<span>+</span></strong>
+                    <p>People hired</p>
+                </div>
+
+                <div class="stat">
+                    <strong>190<span>+</span></strong>
+                    <p>Countries</p>
+                </div>
+
+            </div>
 
         </section>
 
 
-        <!-- ================= RIGHT SIDEBAR ================= -->
-        <aside class="right-sidebar">
+        <!-- ================= FEATURED JOBS ================= -->
 
-            <div class="current-user">
+        <section class="jobs-section" id="jobs">
 
-                <div class="profile-info">
+            <div class="container">
 
-                    <div class="profile-large">
-                        ST
-                    </div>
+                <div class="section-heading">
 
                     <div>
-                        <strong>sathyatesting18</strong>
-                        <span>Sathya Testing</span>
+                        <span class="section-label">OPPORTUNITIES</span>
+                        <h2>Jobs worth <span>moving for.</span></h2>
+                    </div>
+
+                    <a href="#" class="view-all">
+                        View all jobs →
+                    </a>
+
+                </div>
+
+
+                <div class="job-grid">
+
+                    <!-- JOB 1 -->
+
+                    <article class="job-card">
+
+                        <div class="job-top">
+                            <div class="company-logo microsoft">M</div>
+
+                            <button class="bookmark">♡</button>
+                        </div>
+
+                        <div class="job-company">Microsoft</div>
+
+                        <h3>Senior Software Engineer</h3>
+
+                        <div class="job-meta">
+                            <span>⌖ Remote</span>
+                            <span>◷ Full-time</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <strong>$145K – $185K</strong>
+                            <span>2h ago</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 2 -->
+
+                    <article class="job-card featured">
+
+                        <div class="featured-tag">Featured</div>
+
+                        <div class="job-top">
+                            <div class="company-logo openai">✦</div>
+
+                            <button class="bookmark">♡</button>
+                        </div>
+
+                        <div class="job-company">AI Labs</div>
+
+                        <h3>AI / ML Engineer</h3>
+
+                        <div class="job-meta">
+                            <span>⌖ San Francisco</span>
+                            <span>◷ Full-time</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <strong>$170K – $230K</strong>
+                            <span>5h ago</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 3 -->
+
+                    <article class="job-card">
+
+                        <div class="job-top">
+                            <div class="company-logo stripe">S</div>
+
+                            <button class="bookmark">♡</button>
+                        </div>
+
+                        <div class="job-company">Stripe</div>
+
+                        <h3>Product Designer</h3>
+
+                        <div class="job-meta">
+                            <span>⌖ New York</span>
+                            <span>◷ Full-time</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <strong>$120K – $160K</strong>
+                            <span>8h ago</span>
+                        </div>
+
+                    </article>
+
+
+                    <!-- JOB 4 -->
+
+                    <article class="job-card">
+
+                        <div class="job-top">
+                            <div class="company-logo amazon">a</div>
+
+                            <button class="bookmark">♡</button>
+                        </div>
+
+                        <div class="job-company">Amazon</div>
+
+                        <h3>Cloud Solutions Architect</h3>
+
+                        <div class="job-meta">
+                            <span>⌖ Seattle</span>
+                            <span>◷ Full-time</span>
+                        </div>
+
+                        <div class="job-bottom">
+                            <strong>$135K – $175K</strong>
+                            <span>1d ago</span>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="categories-section" id="categories">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <div>
+                        <span class="section-label">EXPLORE</span>
+                        <h2>Find your <span>space.</span></h2>
                     </div>
 
                 </div>
 
-                <button class="switch">
-                    Switch
-                </button>
+
+                <div class="category-grid">
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">⌘</div>
+                        <div>
+                            <h3>Engineering</h3>
+                            <p>284K+ jobs</p>
+                        </div>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">✦</div>
+                        <div>
+                            <h3>Artificial Intelligence</h3>
+                            <p>92K+ jobs</p>
+                        </div>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">◈</div>
+                        <div>
+                            <h3>Design</h3>
+                            <p>71K+ jobs</p>
+                        </div>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">↗</div>
+                        <div>
+                            <h3>Marketing</h3>
+                            <p>68K+ jobs</p>
+                        </div>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">◉</div>
+                        <div>
+                            <h3>Data Science</h3>
+                            <p>54K+ jobs</p>
+                        </div>
+                        <span>↗</span>
+                    </a>
+
+                    <a href="#" class="category-card">
+                        <div class="category-icon">⚡</div>
+                        <div>
+                            <h3>DevOps & Cloud</h3>
+                            <p>48K+ jobs</p>
+                        </div>
+                        <span>↗</span>
+                    </a>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="suggestion-heading">
 
-                <strong>Suggested for you</strong>
+        <!-- ================= COMPANIES ================= -->
 
-                <a href="#">See All</a>
+        <section class="companies-section" id="companies">
+
+            <div class="container">
+
+                <div class="company-heading">
+                    <span class="section-label">TOP EMPLOYERS</span>
+                    <h2>Work with the world's <span>best.</span></h2>
+                </div>
+
+                <div class="company-list">
+
+                    <div class="company-item">
+                        <span class="brand-icon">M</span>
+                        Microsoft
+                    </div>
+
+                    <div class="company-item">
+                        <span class="brand-icon">G</span>
+                        Google
+                    </div>
+
+                    <div class="company-item">
+                        <span class="brand-icon">A</span>
+                        Amazon
+                    </div>
+
+                    <div class="company-item">
+                        <span class="brand-icon">N</span>
+                        NVIDIA
+                    </div>
+
+                    <div class="company-item">
+                        <span class="brand-icon">S</span>
+                        Stripe
+                    </div>
+
+                    <div class="company-item">
+                        <span class="brand-icon">O</span>
+                        OpenAI
+                    </div>
+
+                </div>
 
             </div>
 
+        </section>
 
-            <div class="suggestion">
 
-                <img src="https://i.pravatar.cc/100?img=45">
+        <!-- ================= CTA ================= -->
 
-                <div class="suggestion-user">
-                    <strong>emma_world</strong>
-                    <span>Followed by alex_dev</span>
+        <section class="cta-section" id="resources">
+
+            <div class="container">
+
+                <div class="cta-box">
+
+                    <div class="cta-grid"></div>
+
+                    <div class="cta-content">
+
+                        <span class="section-label">FOR JOB SEEKERS</span>
+
+                        <h2>
+                            Stop searching.
+                            <br>
+                            Start <span>building.</span>
+                        </h2>
+
+                        <p>
+                            Create your profile once and let the right
+                            opportunities find you.
+                        </p>
+
+                        <div class="cta-actions">
+                            <a href="#" class="primary-btn">
+                                Create free profile →
+                            </a>
+
+                            <a href="#" class="secondary-btn">
+                                Explore jobs
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="cta-orb">
+                        <div>✦</div>
+                    </div>
+
                 </div>
-
-                <button>Follow</button>
 
             </div>
 
-
-            <div class="suggestion">
-
-                <img src="https://i.pravatar.cc/100?img=47">
-
-                <div class="suggestion-user">
-                    <strong>david_01</strong>
-                    <span>New to Instagram</span>
-                </div>
-
-                <button>Follow</button>
-
-            </div>
-
-
-            <div class="suggestion">
-
-                <img src="https://i.pravatar.cc/100?img=52">
-
-                <div class="suggestion-user">
-                    <strong>john_dev</strong>
-                    <span>Followed by mike.tech</span>
-                </div>
-
-                <button>Follow</button>
-
-            </div>
-
-
-            <footer class="footer">
-
-                <div>
-                    About · Help · Press · API · Jobs
-                </div>
-
-                <div>
-                    Privacy · Terms · Locations
-                </div>
-
-                <p>
-                    © 2026 INSTAGRAM CLONE
-                </p>
-
-            </footer>
-
-        </aside>
+        </section>
 
     </main>
 
-</div>
 
+    <!-- ================= FOOTER ================= -->
 
-<!-- ================= SIMPLE INTERACTION ================= -->
-<script>
+    <footer>
 
-    const likeButtons = document.querySelectorAll(".like-btn");
+        <div class="container footer-grid">
 
-    likeButtons.forEach(button => {
+            <div class="footer-brand">
 
-        button.addEventListener("click", function () {
+                <a href="#" class="logo">
+                    <span class="logo-icon">✦</span>
+                    Job<span>Nova</span>
+                </a>
 
-            this.classList.toggle("liked");
+                <p>
+                    The modern platform for the
+                    future of work.
+                </p>
 
-            if (this.classList.contains("liked")) {
-                this.textContent = "♥";
-            } else {
-                this.textContent = "♡";
-            }
+                <div class="socials">
+                    <a href="#">𝕏</a>
+                    <a href="#">in</a>
+                    <a href="#">◎</a>
+                </div>
 
-        });
+            </div>
 
-    });
+            <div class="footer-column">
+                <h4>Job Seekers</h4>
+                <a href="#">Search jobs</a>
+                <a href="#">Career advice</a>
+                <a href="#">Salary guide</a>
+                <a href="#">My profile</a>
+            </div>
 
-</script>
+            <div class="footer-column">
+                <h4>Employers</h4>
+                <a href="#">Post a job</a>
+                <a href="#">Find talent</a>
+                <a href="#">Pricing</a>
+                <a href="#">Recruiting solutions</a>
+            </div>
+
+            <div class="footer-column">
+                <h4>Company</h4>
+                <a href="#">About</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom container">
+            <span>© 2026 JobNova. All rights reserved.</span>
+            <span>Built for the future of work.</span>
+        </div>
+
+    </footer>
 
 </body>
 </html>
